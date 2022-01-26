@@ -20,7 +20,7 @@ function readInput ( input ) {
   return input.split(',').map(item => parseInt(item))
 }
 
-function concat () {
+function concat ( array1, array2 ) {
   if (array1.length === array2.length) {
     concatSameLength(array1, array2)
   }
@@ -70,7 +70,7 @@ function concatDifferentLength ( array1, array2 ) {
     }
 
     for (let i = array1.length; i < array2.length; i++) {
-      const num = array1[i]
+      const num = array2[i]
       resultArray.push(num)
     }
   }
