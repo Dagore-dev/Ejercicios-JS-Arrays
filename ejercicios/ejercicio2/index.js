@@ -7,6 +7,7 @@ function handleSubmit ( e ) {
   e.preventDefault()
   const input1 = $INPUT1.value
   const input2 = $INPUT2.value
+  $FORM.reset()
 
   if (input1 && input2) {
     const array1 = readInput(input1)

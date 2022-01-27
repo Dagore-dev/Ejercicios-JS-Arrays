@@ -8,6 +8,7 @@ const $RESULTMIN = document.getElementById('min')
 function handleSubmit ( e ) {
   e.preventDefault()
   const input = $INPUT.value
+  $FORM.reset()
   
   if (input) {
     const numbers = readInput(input)
